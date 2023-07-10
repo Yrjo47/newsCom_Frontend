@@ -1,0 +1,116 @@
+.feedback {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: hsl(358, 89%, 34%);
+}
+
+.form_wrapper{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex: 1;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px 20px;
+    border-radius: 20px;
+    margin: 0 32px;
+}
+
+.form_header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.feedback_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+.feedback_form label {
+    font-size: 1.725rem;
+}
+
+.feedback_form input {
+    max-width: 400px;
+    width: 60vw;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-top: 8px;
+    border: 2px solid hsl(60, 4%, 58%);
+}
+
+.form_button {
+    max-width: 400px;
+    width: 200px;
+    height: 56px;
+    margin-top: 20px;
+    background-color: hsl(358, 89%, 34%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(358, 89%, 34%);
+    border: 2px solid hsl(358, 89%, 34%);
+}
+
+.table_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getData_button{
+    width: fit-content;
+    height: 56px;
+    color: hsl(358, 89%, 34%);
+    cursor: pointer;
+    font-weight: 600;
+    align-self: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.db_table {
+    margin: 40px 0px;
+    max-width: 600px;
+    width: 80%;
+    table-layout: fixed;
+    display: none;
+}
+
+.visible{
+    display: table;
+}
+
+thead{
+    font-weight: 600;
+}
+
+table, tr, td {
+    border: 2px solid hsl(0, 0%, 0%);
+    border-collapse: collapse;
+    color: hsl(0, 0%, 0%);
+}
+
+td {
+    padding: 12px;
+    word-wrap: break-word;
+}
