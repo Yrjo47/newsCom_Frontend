@@ -11,7 +11,7 @@ const Feedback = () => {
     
     const sendFeedback = () => {
         console.log('sending...');
-        Axios.post('http://localhost:3001/feedback', {
+        Axios.post('https://newsCom-api.onrender.com/feedback', {
             name: name,
             address: address,
             email: email,
@@ -21,7 +21,7 @@ const Feedback = () => {
     }
 
     const getFeedback = () => {
-        Axios.get('http://localhost:3001/feedback').then((response) => {
+        Axios.get('https://newsCom-api.onrender.com/feedback').then((response) => {
             console.log(response);
             setFeedbackList(response.data);
         });

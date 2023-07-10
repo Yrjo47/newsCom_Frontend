@@ -8,7 +8,7 @@ const News = () => {
   const [newsList, setNews] = useState([]);
 
   useEffect (() => {
-    Axios.get('http://localhost:3001/news').then((response) => {
+    Axios.get('https://newsCom-api.onrender.com/news').then((response) => {
       console.log(response);
       setNews(response.data);
     });

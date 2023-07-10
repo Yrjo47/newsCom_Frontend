@@ -8,7 +8,7 @@ const Home = () => {
   const [homeNews, setHomeNews] = useState([]);
 
   useEffect (() => {
-    Axios.get('http://localhost:3001/homeNews').then((response) => {
+    Axios.get('https://newsCom-api.onrender.com/homeNews').then((response) => {
       console.log(response);
       setHomeNews(response.data);
     });
