@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom';
 import Axios from 'axios';
 import Note from '../components/Note'
 import '../styles/Home.css'
@@ -33,8 +34,8 @@ const Home = () => {
       
                   return <Note key={val.id} title={val.title} text={val.body} date={date}/>
                 })}
-                <a href="/news" className="news_button">All news</a>
-                <a href="/feedback" className="feedback_button">Send feedback</a>                
+                <Link to="/news" className="news_button">All news</Link>
+                <Link to="/feedback" className="feedback_button">Send feedback</Link>                
             </div>
         </div>
     </div>

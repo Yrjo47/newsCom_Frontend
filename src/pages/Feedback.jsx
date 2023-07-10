@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/Feedback.css'
 import Axios from 'axios'
 
@@ -31,7 +32,7 @@ const Feedback = () => {
 
     const feedbackMessage = async () => {
         let re = /\S+@\S+\.\S+/;
-        if (re.test(email)){
+        if (re.test(email) === false){
             alert('Not an email');
         }
         else if (name === '' | address === '' | email === ''){
@@ -53,7 +54,7 @@ const Feedback = () => {
 
     return (
         <div className='feedback'>
-            <a href='/' className="home_button">Home</a>
+            <Link to='/' className="home_button">Home</Link>
             <div className="form_wrapper">
                 <div className="form_container">
                     <h1 className="form_header">Feedback form</h1>

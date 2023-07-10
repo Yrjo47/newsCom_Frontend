@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom';
 import Axios from 'axios';
 import Note from '../components/Note'
 import '../styles/News.css'
@@ -16,7 +17,7 @@ const News = () => {
 
   return (
     <div className=' news'>
-      <a href='/' className="home_button">Home</a>
+      <Link to='/' className="home_button">Home</Link>
       <div className="news_wrapper">
         <div className="news_container">
           {newsList.reverse().map((val) => {
